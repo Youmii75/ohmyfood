@@ -25,3 +25,13 @@ input {
     background-color: #EAEAEA;
     border: none;
 }
+
+/*footer*/
+footer {
+    background-color: #353535;
+}
+
+.footer_title h3 {
+    font-family: var(--font-title);
+    color: white;
+}
