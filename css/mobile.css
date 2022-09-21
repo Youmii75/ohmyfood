@@ -6,11 +6,25 @@ body {
 header {
     display: flex;
     justify-content: center;
+    position: relative;
+    padding: 16px;
+    box-shadow: 0px 4px 8px #999;
+}
+
+header h1 {
+    margin: 0;
 }
 
 .name {
     font-family: var(--font-title);
     font-size: 24px;
+}
+
+/*searc and title */
+.info_title {
+    background-color: #F6F6F6;
+    text-align: center;
+    margin: 0;
 }
 
 /*search*/
@@ -28,24 +42,40 @@ input {
     border: none;
 }
 
+button {
+    box-shadow: 0px 4px 8px #999;
+    padding: 12px 24px;
+    margin-bottom: 32px;
+    border: none;
+    background-color: #353535;
+    border-radius: 40px;
+    
+}
+
+.info_button {
+    font-family: var(--font-main);
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+}
+
+
 /*title*/
+
 .title {
-    background-color: #F6F6F6;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
     font-weight: bold;
     font-size: 24px;
     font-family: var(--font-main);
 }
 
 .substitles {
-    text-align: center;
     font-family: var(--font-main);
     font-size: 20px;
     font-weight: bold;
     color: #969696;
+    padding-bottom: 24px;
 }
 
 /*footer*/
