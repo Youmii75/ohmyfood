@@ -6,6 +6,10 @@ body {
     margin: auto;
 }
 
+a {
+    color: inherit;
+}
+
 /*header*/
 header {
     display: flex;
@@ -59,7 +63,6 @@ button {
 
 .info_button {
     font-family: var(--font-main);
-    font-weight: bolder;
     font-size: 20px;
     color: white;
 }
@@ -71,15 +74,17 @@ button {
     display: flex;
     justify-content: center;
     /* flex-direction: column; */
-    font-weight: bold;
-    font-size: 24px;
+    font-size: 18px;
+    font-family: var(--font-main);
+}
+
+.title h2 {
     font-family: var(--font-main);
 }
 
 .substitles {
     font-family: var(--font-main);
     font-size: 20px;
-    font-weight: bold;
     color: #969696;
     padding-bottom: 24px;
 }
@@ -94,21 +99,37 @@ button {
 .container_filtre h3 {
     margin: 0;
     padding: 24px 20px 0px;
-    font-size: 28px;
+    font-size: 24px;
     font-family: var(--font-main);
-    font-weight: bolder;
 }
 
 .container_filtre .filtres {
     align-items: center;
 }
 
+.block_filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
 .filtres {
     background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-around;
     border-radius: 20px;
     padding: 32px;
     width: 68%;
-    text-align: center;
+}
+
+.filtres strong {
+    font-family: var(--font-main);
+}
+
+.icone {
+    font-size: x-large;
+    color: grey;
 }
 
 /*main*/
@@ -157,16 +178,30 @@ button {
     flex-direction: column;
     gap: 8px;
     text-decoration-line: none;
+
+    /* h4 {
+        font-family: var(--font-main);
+        margin: 0px
+    } */
 }
 
 .content_card h4 {
     font-family: var(--font-main);
     margin: 0px;
+    padding-left: 16px;
 }
 
 .content_card p {
     font-family: var(--font-main);
     margin: 0px;
+    padding-left: 16px;
+}
+
+.fa-regular.fa-heart.like {
+    display: flex;
+    justify-content: end;
+    font-size: xx-large;
+    margin: -43px 40px;
 }
 
 /*footer*/
