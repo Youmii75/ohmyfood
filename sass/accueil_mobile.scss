@@ -1,11 +1,12 @@
 @import 'variables';
 
-.container {
-    max-width: 390px;
+body {
+    margin: 0;
+}
 
-    body {
-        margin: auto;
-    }
+.container {
+    max-width: 100%;
+
 
     a {
         color: inherit;
