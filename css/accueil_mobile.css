@@ -1,0 +1,223 @@
+.container {
+    max-width: 390px;
+}
+
+.container body {
+    margin: auto;
+}
+
+.container a {
+    color: inherit;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.name {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 24px;
+}
+
+.top_picture {
+    width: 100%;
+}
+
+/*search*/
+.search {
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+    box-shadow: 4px 4px 12px 8px #999;
+}
+
+.search input {
+    font-size: "Roboto", sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #EAEAEA;
+    border: none;
+}
+
+/*title and button*/
+.info_title {
+    background-color: #F6F6F6;
+    text-align: center;
+    margin: 0;
+}
+
+.info_title .title {
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+}
+
+.info_title .title h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+.info_title .substitles {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: #969696;
+    padding-bottom: 24px;
+}
+
+.info_title button {
+    box-shadow: 0px 4px 8px #999;
+    padding: 12px 24px;
+    margin-bottom: 32px;
+    border: none;
+    background-color: #353535;
+    border-radius: 40px;
+}
+
+.info_title button .info_button {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+/*filtres*/
+.container_filtre {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.container_filtre h3 {
+    margin: 0;
+    padding: 24px 20px 0px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container_filtre .block_filtres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container_filtre .filtres {
+    align-items: center;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    padding: 32px;
+    width: 68%;
+}
+
+.container_filtre .filtres strong {
+    font-family: "Roboto", sans-serif;
+}
+
+.container_filtre .icone {
+    font-size: x-large;
+    color: grey;
+}
+
+/*main*/
+.main_cards {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.main_cards h3 {
+    margin: 0;
+    padding: 24px 20px;
+    font-size: 28px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+}
+
+.main_cards .container_cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 36px;
+}
+
+.main_cards .container_cards .restaurant_card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 220px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #999;
+}
+
+.main_cards .container_cards .restaurant_card img {
+    position: relative;
+    object-fit: cover;
+    height: 68%;
+}
+
+.main_cards .container_cards .content_card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-decoration-line: none;
+}
+
+.main_cards .container_cards .content_card h4 {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding-left: 16px;
+}
+
+.main_cards .container_cards .content_card p {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    padding-left: 16px;
+}
+
+.main_cards .container_cards .content_card .fa-regular.fa-heart.like {
+    display: flex;
+    justify-content: end;
+    font-size: xx-large;
+    margin: -43px 40px;
+}
+
+/*footer*/
+footer {
+    background-color: #353535;
+}
+
+footer h3 {
+    font-family: "Shrikhand", sans-serif;
+    font-weight: inherit;
+    color: white;
+    padding: 20px 20px 0px 20px;
+}
+
+footer .footer_text {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 0px 0px 20px 20px;
+}
+
+footer .footer_text a {
+    text-decoration-line: inherit;
+}
+
+footer .footer_text .footer_icon {
+    margin-right: 4px;
+}
+
+/*# sourceMappingURL=accueil_mobile.css.map */
