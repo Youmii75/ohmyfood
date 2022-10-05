@@ -40,10 +40,10 @@ header {
     display: flex;
     justify-content: center;
     padding: 24px;
-    box-shadow: 4px 4px 12px 8px #999;
+    box-shadow: inset 0px 0px 12px 0px #999;
 
     input {
-        font-size: $font-main;
+        font-size: 20px;
         font-weight: bolder;
         text-align: center;
         background-color: $background-color-primary;
@@ -60,13 +60,11 @@ header {
     .title {
         display: flex;
         justify-content: center;
-        /* flex-direction: column; */
-        font-size: 18px;
+        margin: 0;
+        padding-top: 32px;
+        font-size: 28px;
+        font-weight: bold;
         font-family: $font-main;
-
-        h2 {
-            font-family: $font-main;
-        }
     }
 
     .substitles {
@@ -76,22 +74,20 @@ header {
         padding-bottom: 24px;
     }
 
-    button {
+
+    .info_button {
         box-shadow: 0px 4px 8px #999;
-        padding: 12px 24px;
+        padding: 16px 24px;
         margin-bottom: 32px;
         border: none;
-        background-color: #353535;
+        background: linear-gradient(-180deg, $color-second-main, $color-main);
         border-radius: 40px;
-
-        .info_button {
-            font-family: $font-main;
-            font-size: 20px;
-            color: white;
-        }
+        font-family: $font-main;
+        font-size: 20px;
+        color: white;
     }
-
 }
+
 
 /*filtres*/
 .container_filtre {
@@ -99,10 +95,10 @@ header {
     flex-direction: column;
     gap: 36px;
 
-    h3 {
+    h2 {
         margin: 0;
         padding: 24px 20px 0px;
-        font-size: 24px;
+        font-size: 28px;
         font-family: $font-main;
     }
 
@@ -110,20 +106,44 @@ header {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 32px;
+        margin-bottom: 28px;
     }
 
     .filtres {
         align-items: center;
         background-color: $background-color-secondary;
+        position: relative;
         display: flex;
         justify-content: space-around;
         border-radius: 20px;
         padding: 32px;
+        box-shadow: 0px 8px 6px 0px #e0e0e0;
         width: 68%;
+
+        &:hover {
+            background-color: #F5EDFF;
+            transition: 0.5s;
+            cursor: pointer;
+        }
 
         strong {
             font-family: $font-main;
+        }
+
+        .liste_chiffre {
+            display: flex;
+            position: absolute;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            transform: translateX(-50%);
+            border-radius: 50px;
+            width: 40px;
+            height: 40px;
+            color: white;
+            background-color: $color-main;
+
         }
     }
 
@@ -137,11 +157,11 @@ header {
 .main_cards {
     display: flex;
     flex-direction: column;
+    gap: 24px;
     padding: 20px;
 
-    h3 {
+    h2 {
         margin: 0;
-        padding: 24px 20px;
         font-size: 28px;
         font-family: $font-main;
         font-weight: bolder;
@@ -172,6 +192,7 @@ header {
 
         .content_card {
             display: flex;
+            position: relative;
             flex-direction: column;
             gap: 8px;
             text-decoration-line: none;
@@ -190,9 +211,11 @@ header {
 
             .fa-regular.fa-heart.like {
                 display: flex;
-                justify-content: end;
+                position: absolute;
+                right: 24px;
+                transform: translateX(-100%);
+                margin-top: 8px;
                 font-size: xx-large;
-                margin: -43px 40px;
             }
         }
     }
@@ -220,7 +243,7 @@ footer {
         }
 
         .footer_icon {
-            margin-right: 4px;
+            margin-right: 12px;
         }
     }
 }
