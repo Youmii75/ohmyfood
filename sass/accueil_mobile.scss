@@ -145,12 +145,18 @@ header {
             background-color: $color-main;
 
         }
+
+        .icone {
+            font-size: x-large;
+            color: $color_icone;
+
+            &:hover {
+                color: $color-main;
+                transition: 0.5s;
+            }
+        }
     }
 
-    .icone {
-        font-size: x-large;
-        color: $color_icone;
-    }
 }
 
 /*main*/

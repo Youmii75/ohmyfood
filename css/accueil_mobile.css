@@ -142,9 +142,14 @@ header h1 {
     background-color: #9356DC;
 }
 
-.container_filtre .icone {
+.container_filtre .filtres .icone {
     font-size: x-large;
     color: grey;
+}
+
+.container_filtre .filtres .icone:hover {
+    color: #9356DC;
+    transition: 0.5s;
 }
 
 /*main*/

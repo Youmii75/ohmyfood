@@ -41,20 +41,20 @@
             background-color: $color-third-main;
             position: absolute;
             left: 0;
-            width: 50px;
+            width: 48px;
             height: 4px;
             margin: 24px 0 0 20px;
 
         }
 
-        .liste_entrees {
+        .liste_plats {
             display: flex;
             flex-direction: column;
             margin-top: 24px;
             gap: 20px;
 
 
-            .entrees_text {
+            .menu_text {
                 background-color: white;
                 width: 92%;
                 margin: 0;
