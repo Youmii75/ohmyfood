@@ -36,7 +36,6 @@
 
     .menu_liste {
         font-family: $font-main;
-        font-weight: bold;
         font-size: 16px;
         margin-left: 20px;
 
@@ -70,6 +69,14 @@
                 .text_menu {
                     line-height: 28px;
                     margin: 12px 0px 12px 12px;
+
+                    .strong_word {
+                        font-weight: bold;
+                    }
+                }
+
+                .price_check {
+                    font-weight: bold;
                 }
             }
         }
