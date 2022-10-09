@@ -20,7 +20,7 @@ header {
     position: relative;
     padding: 16px;
 
-    h1 {
+    p {
         margin: 0;
     }
 }
@@ -43,6 +43,7 @@ header {
     box-shadow: inset 0px 0px 12px 0px #999;
 
     input {
+        font-family: $font-main;
         font-size: 20px;
         font-weight: bolder;
         text-align: center;
@@ -125,6 +126,13 @@ header {
             background-color: #F5EDFF;
             transition: 0.5s;
             cursor: pointer;
+
+            .icone {
+                font-size: x-large;
+                color: $color-main;
+                transition: 0.5s;
+
+            }
         }
 
         strong {
@@ -150,10 +158,6 @@ header {
             font-size: x-large;
             color: $color_icone;
 
-            &:hover {
-                color: $color-main;
-                transition: 0.5s;
-            }
         }
     }
 
@@ -188,6 +192,16 @@ header {
             border-radius: 20px;
             box-shadow: 5px 5px 10px #999;
 
+            .new {
+                font-family: $font-main;
+                background-color: $color-third-main;
+                font-weight: 800;
+                color: #369658;
+                padding: 8px;
+                position: absolute;
+                top: 20px;
+                right: 20px;
+            }
         }
 
         .restaurant_card img {
@@ -207,6 +221,7 @@ header {
                 font-family: $font-main;
                 margin: 0px;
                 padding-left: 16px;
+                margin-top: 4px;
             }
 
             p {
