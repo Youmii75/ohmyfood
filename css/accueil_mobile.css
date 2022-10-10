@@ -8,23 +8,21 @@ body {
 
 .container a {
   color: inherit;
+  text-decoration-line: inherit;
 }
 
 /*Header*/
-header {
+.name {
   display: flex;
   justify-content: center;
   position: relative;
-  padding: 16px;
-}
-
-header p {
-  margin: 0;
-}
-
-.name {
+  padding: 36px;
   font-family: "Shrikhand", sans-serif;
-  font-size: 24px;
+  font-size: 36px;
+}
+
+.name p {
+  margin: 0;
 }
 
 .top_picture {
@@ -250,10 +248,6 @@ footer .footer_text {
   font-weight: bolder;
   color: white;
   padding: 0px 0px 20px 20px;
-}
-
-footer .footer_text a {
-  text-decoration-line: inherit;
 }
 
 footer .footer_text .footer_icon {

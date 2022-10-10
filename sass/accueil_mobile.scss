@@ -10,24 +10,22 @@ body {
 
     a {
         color: inherit;
+        text-decoration-line: inherit;
     }
 }
 
 /*Header*/
-header {
+.name {
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 16px;
+    padding: 36px;
+    font-family: $font-title;
+    font-size: 36px;
 
     p {
         margin: 0;
     }
-}
-
-.name {
-    font-family: $font-title;
-    font-size: 24px;
 }
 
 .top_picture {
@@ -258,10 +256,6 @@ footer {
         font-weight: bolder;
         color: white;
         padding: 0px 0px 20px 20px;
-
-        a {
-            text-decoration-line: inherit;
-        }
 
         .footer_icon {
             margin-right: 12px;
