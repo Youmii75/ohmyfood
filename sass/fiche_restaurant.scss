@@ -93,6 +93,12 @@
                         font-size: 20px;
                         font-weight: bold;
                     }
+
+
+                    .strong_price {
+                        font-weight: bold;
+                        gap: 20px;
+                    }
                 }
 
                 .price_check {
@@ -100,10 +106,6 @@
                     display: flex;
 
 
-                    .strong-price {
-                        font-weight: bold;
-                        gap: 20px;
-                    }
 
                 }
             }
