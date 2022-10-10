@@ -94,14 +94,14 @@
   font-weight: bold;
 }
 
+.container_menu .menu_liste .liste_plats .container_text_check .text_menu .strong_price {
+  font-weight: bold;
+  gap: 20px;
+}
+
 .container_menu .menu_liste .liste_plats .container_text_check .price_check {
   width: 0px;
   display: flex;
-}
-
-.container_menu .menu_liste .liste_plats .container_text_check .price_check .strong-price {
-  font-weight: bold;
-  gap: 20px;
 }
 
 /*# sourceMappingURL=fiche_restaurant.css.map */
