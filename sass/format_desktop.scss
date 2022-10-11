@@ -1,0 +1,72 @@
+@import 'variables';
+
+body {
+    background: linear-gradient(-180deg, $color-second-main, $color-main);
+}
+
+.container {
+    margin: 0 200px;
+    background-color: $background-color-secondary;
+}
+
+/*header*/
+
+.name {
+    font-size: 56px;
+}
+
+/*search*/
+.search {
+
+    input {
+        font-size: 24px;
+    }
+}
+
+/*title and button*/
+
+.info_title {
+
+    .title {
+        font-size: 40px;
+    }
+
+    .substitles {
+        font-size: 32px;
+    }
+
+    .info_button {
+        font-size: 24px;
+    }
+}
+
+/*filtres*/
+
+.container_filtre {
+
+    .block_filtres {
+        flex-direction: row;
+        gap: 100px;
+        padding: 0 60px;
+    }
+
+    .filtres {
+        border: 1px solid $color-third-main;
+        box-shadow: 4px -6px 0 0 $color-third-main;
+    }
+}
+
+/*main and cards*/
+.main_cards {
+
+    .container_cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+
+        .restaurant_card {
+            height: 240px;
+            width: 40%;
+        }
+    }
+}
