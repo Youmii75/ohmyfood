@@ -94,9 +94,28 @@
   font-weight: bold;
 }
 
-.container_menu .menu_liste .liste_plats .container_text_check .text_menu .strong_price {
+.container_menu .menu_liste .liste_plats .container_text_check .text_menu:hover {
+  cursor: pointer;
+}
+
+.container_menu .menu_liste .liste_plats .container_text_check .strong_price {
   font-weight: bold;
   gap: 20px;
+}
+
+.container_menu .info_button {
+  box-shadow: 0px 4px 8px #999;
+  text-align: center;
+  padding: 16px 24px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 40px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+  width: 40%;
+  margin: 40px 0 20px 84px;
+  background: linear-gradient(-180deg, #FF79DA, #9356DC);
 }
 
 /*# sourceMappingURL=fiche_restaurant.css.map */
