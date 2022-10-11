@@ -1,0 +1,10 @@
+@import 'variables';
+
+body {
+    background: linear-gradient(-180deg, $color-second-main, $color-main);
+}
+
+.container {
+    margin: 0 200px;
+    background-color: $background-color-secondary;
+}
