@@ -6,15 +6,18 @@
   align-items: center;
   width: 100%;
 }
+
 .name .return {
   position: absolute;
   left: 16px;
   top: 12px;
   font-size: 28px;
 }
+
 .name p {
   padding-top: 16px;
 }
+
 .name img {
   margin-top: 24px;
   width: 100%;
@@ -29,6 +32,7 @@
   position: relative;
   margin-top: -64px;
 }
+
 .container_menu .title_menu {
   font-family: "Shrikhand", sans-serif;
   display: flex;
@@ -39,14 +43,17 @@
   margin: 0;
   width: 100%;
 }
+
 .container_menu .menu_liste {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin-left: 20px;
 }
+
 .container_menu .menu_liste p {
   margin: 0px;
 }
+
 .container_menu .menu_liste .horizontal-line {
   background-color: #99E2D0;
   position: absolute;
@@ -55,12 +62,14 @@
   height: 3px;
   margin: 24px 0 0 20px;
 }
+
 .container_menu .menu_liste .liste_plats {
   display: flex;
   flex-direction: column;
   margin: 24px 0px;
   gap: 20px;
 }
+
 .container_menu .menu_liste .liste_plats .container_text_check {
   display: flex;
   justify-content: space-between;
@@ -71,6 +80,7 @@
   width: 96%;
   margin: 0;
 }
+
 .container_menu .menu_liste .liste_plats .container_text_check .text_menu {
   line-height: 28px;
   margin: 12px 0px 12px 12px;
@@ -78,14 +88,17 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
 .container_menu .menu_liste .liste_plats .container_text_check .text_menu .strong_word {
   font-size: 20px;
   font-weight: bold;
 }
+
 .container_menu .menu_liste .liste_plats .container_text_check .strong_price {
   font-weight: bold;
   gap: 20px;
 }
+
 .container_menu .info_button {
   box-shadow: 0px 4px 8px #999;
   text-align: center;
@@ -94,11 +107,16 @@
   border: none;
   border-radius: 40px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   width: 40%;
   margin: 40px 0 20px 84px;
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
+  transition-duration: 2s;
+}
+
+.container_menu .info_button:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=fiche_restaurant.css.map */
