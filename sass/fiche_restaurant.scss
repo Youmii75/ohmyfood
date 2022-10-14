@@ -85,6 +85,10 @@
 
                     .text_menu {
 
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
                         .strong_word {
                             font-size: 20px;
                             font-weight: bold;
@@ -96,9 +100,9 @@
 
                             .description {
                                 flex: 1;
-                                white-space: nowrap;
-                                overflow: hidden;
-                                text-overflow: ellipsis;
+                                // white-space: nowrap;
+                                // overflow: hidden;
+                                // text-overflow: ellipsis;
                             }
 
                             .strong_price {
@@ -119,6 +123,11 @@
                     width: 0px;
                     background-color: aquamarine;
                     right: -48px;
+
+                    .icone_check {
+                        font-size: 36px;
+                        color: white;
+                    }
                 }
 
                 &:hover {
