@@ -6,15 +6,18 @@
   align-items: center;
   width: 100%;
 }
+
 .name .return {
   position: absolute;
   left: 16px;
   top: 12px;
   font-size: 28px;
 }
+
 .name p {
   padding-top: 16px;
 }
+
 .name img {
   margin-top: 24px;
   width: 100%;
@@ -29,6 +32,7 @@
   position: relative;
   margin-top: -64px;
 }
+
 .container_menu .title_menu {
   font-family: "Shrikhand", sans-serif;
   display: flex;
@@ -39,14 +43,17 @@
   margin: 0;
   width: 100%;
 }
+
 .container_menu .menu_liste {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin-left: 20px;
 }
+
 .container_menu .menu_liste p {
   margin: 0px;
 }
+
 .container_menu .menu_liste .horizontal-line {
   background-color: #99E2D0;
   position: absolute;
@@ -55,38 +62,67 @@
   height: 3px;
   margin: 24px 0 0 20px;
 }
+
 .container_menu .menu_liste .liste_plats {
   display: flex;
   flex-direction: column;
   margin: 24px 0px;
+  padding: 12px;
   gap: 20px;
 }
-.container_menu .menu_liste .liste_plats .container_text_check {
+
+.container_menu .menu_liste .liste_plats .container_plat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0px 6px 8px 0px #e0e0e0;
+  border-radius: 12px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.container_menu .menu_liste .liste_plats .container_plat .icone_check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  color: white;
+  font-size: 25px;
+  height: 100%;
+  width: 80px;
+  margin-right: 0px;
+}
+
+.container_menu .menu_liste .liste_plats .container_text {
   display: flex;
   justify-content: space-between;
-  background-color: white;
-  border-radius: 16px;
   align-items: center;
-  box-shadow: 0px 6px 8px 0px #e0e0e0;
-  width: 96%;
-  margin: 0;
-}
-.container_menu .menu_liste .liste_plats .container_text_check .text_menu {
-  line-height: 28px;
-  margin: 12px 0px 12px 12px;
+  width: 100%;
+  height: 100%;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.container_menu .menu_liste .liste_plats .container_text .text_menu {
   text-overflow: ellipsis;
 }
-.container_menu .menu_liste .liste_plats .container_text_check .text_menu .strong_word {
-  font-size: 20px;
+
+.container_menu .menu_liste .liste_plats .container_text .text_menu :first-child {
   font-weight: bold;
+  color: black;
 }
-.container_menu .menu_liste .liste_plats .container_text_check .strong_price {
-  font-weight: bold;
-  gap: 20px;
+
+.container_menu .menu_liste .liste_plats .container_text .strong_price {
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+  margin-bottom: 15px;
+  margin-right: 15px;
 }
-.container_menu .info_button {
+
+.container_menu .menu_liste .info_button {
   box-shadow: 0px 4px 8px #999;
   text-align: center;
   padding: 16px 24px;
@@ -94,11 +130,15 @@
   border: none;
   border-radius: 40px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   color: white;
   width: 40%;
-  margin: 40px 0 20px 84px;
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
+  transition-duration: 2s;
+}
+
+.container_menu .menu_liste .info_button:hover {
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=fiche_restaurant.css.map */

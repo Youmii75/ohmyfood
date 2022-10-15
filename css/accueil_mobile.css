@@ -81,6 +81,11 @@ body {
   font-size: 20px;
   color: white;
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
+  transition-duration: 2s;
+}
+
+.info_title .info_button:hover {
+  transform: scale(1.2);
 }
 
 /*filtres*/
