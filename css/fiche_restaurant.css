@@ -6,18 +6,15 @@
   align-items: center;
   width: 100%;
 }
-
 .name .return {
   position: absolute;
   left: 16px;
   top: 12px;
   font-size: 28px;
 }
-
 .name p {
   padding-top: 16px;
 }
-
 .name img {
   margin-top: 24px;
   width: 100%;
@@ -32,7 +29,6 @@
   position: relative;
   margin-top: -64px;
 }
-
 .container_menu .title_menu {
   font-family: "Shrikhand", sans-serif;
   display: flex;
@@ -43,17 +39,14 @@
   margin: 0;
   width: 100%;
 }
-
 .container_menu .menu_liste {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   margin-left: 20px;
 }
-
 .container_menu .menu_liste p {
   margin: 0px;
 }
-
 .container_menu .menu_liste .horizontal-line {
   background-color: #99E2D0;
   position: absolute;
@@ -62,7 +55,6 @@
   height: 3px;
   margin: 24px 0 0 20px;
 }
-
 .container_menu .menu_liste .liste_plats {
   display: flex;
   flex-direction: column;
@@ -70,7 +62,6 @@
   padding: 12px;
   gap: 20px;
 }
-
 .container_menu .menu_liste .liste_plats .container_plat {
   display: flex;
   flex-direction: row;
@@ -82,46 +73,52 @@
   height: 70px;
   overflow: hidden;
 }
-
 .container_menu .menu_liste .liste_plats .container_plat .icone_check {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: blue;
+  background: #99E2D0;
   color: white;
-  font-size: 25px;
+  font-size: 28px;
   height: 100%;
-  width: 80px;
-  margin-right: 0px;
+  width: 84px;
+  margin-right: -84px;
 }
-
+.container_menu .menu_liste .liste_plats .container_plat:hover {
+  cursor: pointer;
+}
+.container_menu .menu_liste .liste_plats .container_plat:hover .icone_check {
+  width: 50%;
+}
 .container_menu .menu_liste .liste_plats .container_text {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
+  padding: 12px;
+  overflow: hidden;
+}
+.container_menu .menu_liste .liste_plats .container_text .text_menu {
   white-space: nowrap;
   overflow: hidden;
 }
-
-.container_menu .menu_liste .liste_plats .container_text .text_menu {
-  text-overflow: ellipsis;
-}
-
 .container_menu .menu_liste .liste_plats .container_text .text_menu :first-child {
   font-weight: bold;
   color: black;
 }
-
+.container_menu .menu_liste .liste_plats .container_text .text_menu p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .container_menu .menu_liste .liste_plats .container_text .strong_price {
+  font-weight: bold;
   display: flex;
   align-items: flex-end;
   height: 100%;
-  margin-bottom: 15px;
-  margin-right: 15px;
+  margin-bottom: 32px;
+  margin-right: 32px;
 }
-
 .container_menu .menu_liste .info_button {
   box-shadow: 0px 4px 8px #999;
   text-align: center;
@@ -136,7 +133,6 @@
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
   transition-duration: 2s;
 }
-
 .container_menu .menu_liste .info_button:hover {
   transform: scale(1.2);
 }
