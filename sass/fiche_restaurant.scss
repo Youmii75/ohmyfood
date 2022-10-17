@@ -87,13 +87,23 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: blue;
+                    background: $color-third-main;
                     color: white;
-                    font-size: 25px;
+                    font-size: 28px;
                     height: 100%;
-                    width: 80px;
-                    margin-right: 0px;
+                    width: 84px;
+                    margin-right: -84px;
                 }
+
+                &:hover {
+                    cursor: pointer;
+
+                    .icone_check {
+                        width: 50%;
+                    }
+
+                }
+
             }
 
             .container_text {
@@ -102,24 +112,31 @@
                 align-items: center;
                 width: 100%;
                 height: 100%;
-                white-space: nowrap;
+                padding: 12px;
                 overflow: hidden;
 
                 .text_menu {
-                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
 
                     :first-child {
                         font-weight: bold;
                         color: black;
                     }
+
+                    p {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
 
                 .strong_price {
+                    font-weight: bold;
                     display: flex;
                     align-items: flex-end;
                     height: 100%;
-                    margin-bottom: 15px;
-                    margin-right: 15px;
+                    margin-bottom: 32px;
+                    margin-right: 32px;
                 }
             }
         }
