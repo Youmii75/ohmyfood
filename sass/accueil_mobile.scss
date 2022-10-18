@@ -144,6 +144,7 @@ body {
         }
 
         .liste_chiffre {
+            font-family: $font-main;
             display: flex;
             position: absolute;
             left: 0;
@@ -255,11 +256,11 @@ footer {
         font-weight: inherit;
         color: white;
         padding: 20px 20px 0px 20px;
+        margin-top: 0;
     }
 
     .footer_text {
         font-family: $font-main;
-        font-weight: bolder;
         color: white;
         padding: 0px 0px 20px 20px;
 

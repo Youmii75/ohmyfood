@@ -5,7 +5,6 @@ body {
 .container {
   max-width: 100%;
 }
-
 .container a {
   color: inherit;
   text-decoration-line: inherit;
@@ -20,7 +19,6 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 36px;
 }
-
 .name p {
   margin: 0;
 }
@@ -37,7 +35,6 @@ body {
   padding: 24px;
   box-shadow: inset 0px 0px 12px 0px #999;
 }
-
 .search input {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -53,7 +50,6 @@ body {
   text-align: center;
   margin: 0;
 }
-
 .info_title .title {
   display: flex;
   justify-content: center;
@@ -63,14 +59,12 @@ body {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
-
 .info_title .substitles {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   color: #969696;
   padding-bottom: 24px;
 }
-
 .info_title .info_button {
   box-shadow: 0px 4px 8px #999;
   padding: 16px 24px;
@@ -83,7 +77,6 @@ body {
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
   transition-duration: 2s;
 }
-
 .info_title .info_button:hover {
   transform: scale(1.2);
 }
@@ -94,14 +87,12 @@ body {
   flex-direction: column;
   gap: 36px;
 }
-
 .container_filtre h2 {
   margin: 0;
   padding: 24px 20px 0px;
   font-size: 28px;
   font-family: "Roboto", sans-serif;
 }
-
 .container_filtre .block_filtres {
   display: flex;
   flex-direction: column;
@@ -109,7 +100,6 @@ body {
   gap: 32px;
   margin-bottom: 28px;
 }
-
 .container_filtre .filtres {
   align-items: center;
   background-color: #F6F6F6;
@@ -121,24 +111,21 @@ body {
   box-shadow: 0px 8px 6px 0px #e0e0e0;
   width: 68%;
 }
-
 .container_filtre .filtres:hover {
   background-color: #F5EDFF;
   transition: 0.5s;
   cursor: pointer;
 }
-
 .container_filtre .filtres:hover .icone {
   font-size: x-large;
   color: #9356DC;
   transition: 0.5s;
 }
-
 .container_filtre .filtres strong {
   font-family: "Roboto", sans-serif;
 }
-
 .container_filtre .filtres .liste_chiffre {
+  font-family: "Roboto", sans-serif;
   display: flex;
   position: absolute;
   left: 0;
@@ -151,7 +138,6 @@ body {
   color: white;
   background-color: #9356DC;
 }
-
 .container_filtre .filtres .icone {
   font-size: x-large;
   color: grey;
@@ -164,14 +150,12 @@ body {
   gap: 24px;
   padding: 20px;
 }
-
 .main_cards h2 {
   margin: 0;
   font-size: 28px;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
 }
-
 .main_cards .container_cards {
   display: flex;
   flex-direction: column;
@@ -179,7 +163,6 @@ body {
   height: auto;
   gap: 36px;
 }
-
 .main_cards .container_cards .restaurant_card {
   display: flex;
   flex-direction: column;
@@ -188,7 +171,6 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 10px #999;
 }
-
 .main_cards .container_cards .restaurant_card .new {
   font-family: "Roboto", sans-serif;
   background-color: #99E2D0;
@@ -199,13 +181,11 @@ body {
   top: 20px;
   right: 20px;
 }
-
 .main_cards .container_cards .restaurant_card img {
   position: relative;
   object-fit: cover;
   height: 68%;
 }
-
 .main_cards .container_cards .content_card {
   display: flex;
   position: relative;
@@ -213,20 +193,17 @@ body {
   gap: 8px;
   text-decoration-line: none;
 }
-
 .main_cards .container_cards .content_card h4 {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   padding-left: 16px;
   margin-top: 4px;
 }
-
 .main_cards .container_cards .content_card p {
   font-family: "Roboto", sans-serif;
   margin: 0px;
   padding-left: 16px;
 }
-
 .main_cards .container_cards .content_card .fa-regular.fa-heart.like {
   display: flex;
   position: absolute;
@@ -240,21 +217,18 @@ body {
 footer {
   background-color: #353535;
 }
-
 footer h3 {
   font-family: "Shrikhand", sans-serif;
   font-weight: inherit;
   color: white;
   padding: 20px 20px 0px 20px;
+  margin-top: 0;
 }
-
 footer .footer_text {
   font-family: "Roboto", sans-serif;
-  font-weight: bolder;
   color: white;
   padding: 0px 0px 20px 20px;
 }
-
 footer .footer_text .footer_icon {
   margin-right: 12px;
 }

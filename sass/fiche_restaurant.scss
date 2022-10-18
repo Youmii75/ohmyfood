@@ -49,10 +49,10 @@
     .menu_liste {
         font-family: $font-main;
         font-size: 16px;
-        margin-left: 20px;
+        // margin-left: 20px;
 
-        p {
-            margin: 0px;
+        >p {
+            margin-left: 20px;
         }
 
         .horizontal-line {
@@ -91,8 +91,9 @@
                     color: white;
                     font-size: 28px;
                     height: 100%;
-                    width: 84px;
+                    width: 0px;
                     margin-right: -84px;
+                    transition: 2s;
                 }
 
                 &:hover {
@@ -118,13 +119,17 @@
                 .text_menu {
                     white-space: nowrap;
                     overflow: hidden;
+                    line-height: 24px;
 
                     :first-child {
+                        font-size: 19px;
                         font-weight: bold;
                         color: black;
+                        margin: 0;
                     }
 
                     p {
+                        margin: 0;
                         overflow: hidden;
                         text-overflow: ellipsis;
                     }
@@ -135,7 +140,7 @@
                     display: flex;
                     align-items: flex-end;
                     height: 100%;
-                    margin-bottom: 32px;
+                    margin-bottom: 28px;
                     margin-right: 32px;
                 }
             }
@@ -152,7 +157,7 @@
             font-size: 24px;
             color: white;
             width: 40%;
-            // margin: 40px 0 20px 84px;
+            margin: 12px 0 40px 84px;
             background: linear-gradient(-180deg, $color-second-main, $color-main);
             transition-duration: 2s;
 

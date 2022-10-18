@@ -42,10 +42,9 @@
 .container_menu .menu_liste {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  margin-left: 20px;
 }
-.container_menu .menu_liste p {
-  margin: 0px;
+.container_menu .menu_liste > p {
+  margin-left: 20px;
 }
 .container_menu .menu_liste .horizontal-line {
   background-color: #99E2D0;
@@ -81,8 +80,9 @@
   color: white;
   font-size: 28px;
   height: 100%;
-  width: 84px;
+  width: 0px;
   margin-right: -84px;
+  transition: 2s;
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover {
   cursor: pointer;
@@ -102,12 +102,16 @@
 .container_menu .menu_liste .liste_plats .container_text .text_menu {
   white-space: nowrap;
   overflow: hidden;
+  line-height: 24px;
 }
 .container_menu .menu_liste .liste_plats .container_text .text_menu :first-child {
+  font-size: 19px;
   font-weight: bold;
   color: black;
+  margin: 0;
 }
 .container_menu .menu_liste .liste_plats .container_text .text_menu p {
+  margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -116,7 +120,7 @@
   display: flex;
   align-items: flex-end;
   height: 100%;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   margin-right: 32px;
 }
 .container_menu .menu_liste .info_button {
@@ -130,6 +134,7 @@
   font-size: 24px;
   color: white;
   width: 40%;
+  margin: 12px 0 40px 84px;
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
   transition-duration: 2s;
 }
