@@ -81,14 +81,14 @@
   font-size: 28px;
   height: 100%;
   width: 0px;
-  margin-right: -84px;
+  margin-right: -4px;
   transition: 2s;
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover {
   cursor: pointer;
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover .icone_check {
-  width: 50%;
+  width: 100px;
 }
 .container_menu .menu_liste .liste_plats .container_text {
   display: flex;
@@ -134,7 +134,7 @@
   font-size: 24px;
   color: white;
   width: 40%;
-  margin: 12px 0 40px 84px;
+  margin: 12px 0 40px 100px;
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
   transition-duration: 2s;
 }
