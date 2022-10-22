@@ -175,11 +175,11 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #99E2D0;
   font-weight: 800;
+  border-radius: 4px;
   color: #369658;
   padding: 8px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  right: 32px;
 }
 .main_cards .container_cards .restaurant_card img {
   position: relative;
@@ -188,9 +188,12 @@ body {
 }
 .main_cards .container_cards .content_card {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  flex-direction: column;
+  flex-direction: row;
   gap: 8px;
+  height: 100%;
   text-decoration-line: none;
 }
 .main_cards .container_cards .content_card h4 {
@@ -204,13 +207,28 @@ body {
   margin: 0px;
   padding-left: 16px;
 }
-.main_cards .container_cards .content_card .fa-regular.fa-heart.like {
+.main_cards .container_cards .content_card div {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.main_cards .container_cards .content_card div i {
+  font-size: 28px;
+  margin-right: 20px;
+}
+.main_cards .container_cards .content_card div i:last-child {
   position: absolute;
-  right: 24px;
-  transform: translateX(-100%);
-  margin-top: 8px;
-  font-size: xx-large;
+  opacity: 0;
+  transition: 1s ease-in-out all;
+  background: linear-gradient(-180deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main_cards .container_cards .content_card div i:last-child:hover {
+  opacity: 1;
+  transition: 1s ease-in-out all;
 }
 
 /*footer*/

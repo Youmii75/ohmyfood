@@ -73,22 +73,24 @@
   overflow: hidden;
 }
 .container_menu .menu_liste .liste_plats .container_plat .icone_check {
+  background: #99E2D0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #99E2D0;
   color: white;
   font-size: 28px;
   height: 100%;
   width: 0px;
   margin-right: -4px;
-  transition: 2s;
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover {
   cursor: pointer;
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover .icone_check {
   width: 100px;
+  height: 100%;
+  transform: rotate(1turn);
+  transition: 2s ease-in-out;
 }
 .container_menu .menu_liste .liste_plats .container_text {
   display: flex;
@@ -121,7 +123,7 @@
   align-items: flex-end;
   height: 100%;
   margin-bottom: 28px;
-  margin-right: 32px;
+  margin-right: 10px;
 }
 .container_menu .menu_liste .info_button {
   box-shadow: 0px 4px 8px #999;
