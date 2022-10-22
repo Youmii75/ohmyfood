@@ -84,28 +84,34 @@
                 overflow: hidden;
 
                 .icone_check {
+                    background: $color-third-main;
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    background: $color-third-main;
                     color: white;
                     font-size: 28px;
                     height: 100%;
                     width: 0px;
                     margin-right: -4px;
-                    transition: 2s;
+                    // transition: 2s ease-in-out;
+                    // transform: rotate(1turn);
+                    
                 }
-
+                
                 &:hover {
                     cursor: pointer;
-
+                    
                     .icone_check {
                         width: 100px;
+                        height: 100%;
+                        transform: rotate(1turn);
+                        transition: 2s ease-in-out;
+
                     }
 
                 }
 
-            }
+            } 
 
             .container_text {
                 display: flex;
@@ -141,7 +147,7 @@
                     align-items: flex-end;
                     height: 100%;
                     margin-bottom: 28px;
-                    margin-right: 32px;
+                    margin-right: 10px;
                 }
             }
         }
