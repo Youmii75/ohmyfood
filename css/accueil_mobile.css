@@ -167,6 +167,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
   height: 220px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px #999;
@@ -179,7 +180,8 @@ body {
   color: #369658;
   padding: 8px;
   position: absolute;
-  right: 32px;
+  right: 20px;
+  top: 20px;
 }
 .main_cards .container_cards .restaurant_card img {
   position: relative;
@@ -222,7 +224,7 @@ body {
   position: absolute;
   opacity: 0;
   transition: 1s ease-in-out all;
-  background: linear-gradient(-180deg, #FF79DA, #9356DC);
+  background: linear-gradient(-190deg, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
