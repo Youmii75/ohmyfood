@@ -53,6 +53,8 @@ body {
     .filtres {
         border: 1px solid $color-third-main;
         box-shadow: 4px -6px 0 0 $color-third-main;
+        gap: 20px;
+        text-align: center;
     }
 }
 
