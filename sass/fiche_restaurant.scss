@@ -71,6 +71,7 @@
             margin: 24px 0px;
             padding: 12px;
             gap: 20px;
+            animation: slidemenu 6s;
 
             .container_plat {
                 display: flex;
@@ -150,6 +151,19 @@
                     margin-right: 10px;
                 }
             }
+
+            @keyframes slidemenu {
+                from {
+                    transform: translateY(-200px);
+                    opacity: 0;
+
+                }
+
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
         }
 
         .info_button {
@@ -171,4 +185,5 @@
             }
         }
     }
+
 }
