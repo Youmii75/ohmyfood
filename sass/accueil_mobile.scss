@@ -24,7 +24,7 @@ body {
     font-size: 36px;
 
     p {
-        margin: 0;
+        margin: 0 0 -12px 0;
     }
 }
 
@@ -40,13 +40,24 @@ body {
     padding: 24px;
     box-shadow: inset 0px 0px 12px 0px #999;
 
+    form {
+        text-align: center;
+    }
+
     input {
         font-family: $font-main;
         font-size: 20px;
+        color: #353535;
         font-weight: bolder;
         text-align: center;
         background-color: $background-color-primary;
         border: none;
+        width: 76%;
+    }
+
+    .location {
+        font-size: 24px;
+        color: #353535;
     }
 }
 
@@ -77,7 +88,7 @@ body {
     .info_button {
         box-shadow: 0px 4px 8px #999;
         padding: 16px 24px;
-        margin-bottom: 32px;
+        margin-bottom: 80px;
         border: none;
         border-radius: 40px;
         font-family: $font-main;
