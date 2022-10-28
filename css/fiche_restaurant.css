@@ -81,9 +81,10 @@
   color: white;
   font-size: 28px;
   height: 100%;
-  width: 0px;
-  margin-right: -4px;
-  transition: 2s ease-in-out;
+  width: 100px;
+  margin-right: -100px;
+  transition: 1s ease-in-out;
+  transform: rotate(-360deg);
 }
 @keyframes slidemenu {
   from {
@@ -99,10 +100,14 @@
   cursor: pointer;
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover .icone_check {
-  width: 100px;
+  margin-right: 0px;
   height: 100%;
-  transform: rotate(1turn);
-  transition: 1.5s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.container_menu .menu_liste .liste_plats .container_plat:hover .icone_check::before {
+  color: white;
+  transition: 1s ease-in-out;
+  transform: rotate(-360deg);
 }
 .container_menu .menu_liste .liste_plats .container_plat .container_plat:nth-child(1) {
   animation-delay: 0ms;
