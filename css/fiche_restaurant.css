@@ -60,7 +60,7 @@
   margin: 24px 0px;
   padding: 12px;
   gap: 20px;
-  animation: slidemenu 6s;
+  animation: slidemenu 4s;
 }
 .container_menu .menu_liste .liste_plats .container_plat {
   display: flex;
@@ -83,6 +83,17 @@
   height: 100%;
   width: 0px;
   margin-right: -4px;
+  transition: 2s ease-in-out;
+}
+@keyframes slidemenu {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .container_menu .menu_liste .liste_plats .container_plat:hover {
   cursor: pointer;
@@ -92,6 +103,14 @@
   height: 100%;
   transform: rotate(1turn);
   transition: 1.5s ease-in-out;
+}
+.container_menu .menu_liste .liste_plats .container_plat .container_plat:nth-child(1) {
+  animation-delay: 0ms;
+  position: relative;
+}
+.container_menu .menu_liste .liste_plats .container_plat .container_plat:nth-child(2) {
+  animation-delay: -300ms;
+  position: relative;
 }
 .container_menu .menu_liste .liste_plats .container_text {
   display: flex;
@@ -125,16 +144,6 @@
   height: 100%;
   margin-bottom: 28px;
   margin-right: 10px;
-}
-@keyframes slidemenu {
-  from {
-    transform: translateY(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
 }
 .container_menu .menu_liste .info_button {
   box-shadow: 0px 4px 8px #999;

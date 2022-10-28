@@ -71,8 +71,8 @@
             margin: 24px 0px;
             padding: 12px;
             gap: 20px;
-            animation: slidemenu 6s;
-
+            animation: slidemenu 4s;
+            
             .container_plat {
                 display: flex;
                 flex-direction: row;
@@ -82,8 +82,8 @@
                 box-shadow: 0px 6px 8px 0px #e0e0e0;
                 border-radius: 12px;
                 height: 70px;
-                overflow: hidden;
-
+                overflow: hidden;                
+                
                 .icone_check {
                     background: $color-third-main;
                     display: flex;
@@ -94,9 +94,23 @@
                     height: 100%;
                     width: 0px;
                     margin-right: -4px;
-                    // transition: 2s ease-in-out;
+                    transition: 2s ease-in-out;
                     // transform: rotate(1turn);
                     
+                }
+
+
+                @keyframes slidemenu {
+                    from {
+                        transform: translateY(200px);
+                        opacity: 0;
+
+                    }
+                        
+                    to {
+                        transform: translateY(0);
+                            opacity: 1;
+                     }
                 }
                 
                 &:hover {
@@ -107,11 +121,20 @@
                         height: 100%;
                         transform: rotate(1turn);
                         transition: 1.5s ease-in-out;
-
+                        
                     }
-
+                    
                 }
 
+                .container_plat:nth-child(1) {
+                    animation-delay: 0ms;
+                    position: relative;
+                }
+
+                .container_plat:nth-child(2) {
+                    animation-delay: -300ms;
+                    position: relative;
+                }
             } 
 
             .container_text {
@@ -152,18 +175,6 @@
                 }
             }
 
-            @keyframes slidemenu {
-                from {
-                    transform: translateY(-200px);
-                    opacity: 0;
-
-                }
-
-                to {
-                    transform: translateY(0);
-                    opacity: 1;
-                }
-            }
         }
 
         .info_button {
@@ -185,5 +196,4 @@
             }
         }
     }
-
 }
