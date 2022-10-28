@@ -92,11 +92,12 @@
                     color: white;
                     font-size: 28px;
                     height: 100%;
-                    width: 0px;
-                    margin-right: -4px;
-                    transition: 2s ease-in-out;
-                    // transform: rotate(1turn);
+                    width: 100px;
+                    margin-right: -100px;
+                    transition: 1s ease-in-out;
+                    transform: rotate(-360deg);
                     
+                   
                 }
 
 
@@ -117,11 +118,15 @@
                     cursor: pointer;
                     
                     .icone_check {
-                        width: 100px;
+                        margin-right: 0px;
                         height: 100%;
-                        transform: rotate(1turn);
-                        transition: 1.5s ease-in-out;
+                        transition: 1s ease-in-out;
                         
+                        &::before {
+                            color: white;
+                            transition: 1s ease-in-out;
+                        transform: rotate(-360deg);
+                        }
                     }
                     
                 }
