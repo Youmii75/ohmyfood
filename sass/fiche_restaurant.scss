@@ -38,11 +38,12 @@
     .title_menu {
         font-family: $font-title;
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
         align-items: center;
         font-size: 28px;
         padding: 32px 0px;
-        margin: 0;
+        gap: 40px;
+        margin: 0 0 0 20px;
         width: 100%;
     }
 
