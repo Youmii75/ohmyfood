@@ -1,6 +1,10 @@
 @import 'variables';
 
 /*header*/
+body {
+    position: relative;
+}
+
 .name {
     flex-direction: column;
     padding: inherit;
@@ -72,9 +76,26 @@
             margin: 24px 0px;
             padding: 12px;
             gap: 20px;
-            animation: slidemenu 4s;
+            
+            
+            
+            .container_plat:nth-child(1) {
+                animation-delay: 400ms;
+                
+            }
+
+            .container_plat:nth-child(2) {
+                animation-delay: 800ms;
+
+            }
+
+            .container_plat:nth-child(3) {
+                animation-delay: 1200ms;
+                
+            }
             
             .container_plat {
+                animation: slidemenu 600ms forwards ease-out ;
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
@@ -83,7 +104,8 @@
                 box-shadow: 0px 6px 8px 0px #e0e0e0;
                 border-radius: 12px;
                 height: 70px;
-                overflow: hidden;                
+                overflow: hidden;
+                opacity: 0;
                 
                 .icone_check {
                     background: $color-third-main;
@@ -103,13 +125,13 @@
 
 
                 @keyframes slidemenu {
-                    from {
-                        transform: translateY(200px);
+                    0% {
+                        transform: translateY(40px);
                         opacity: 0;
-
                     }
+                    
                         
-                    to {
+                    100% {
                         transform: translateY(0);
                             opacity: 1;
                      }
@@ -121,11 +143,11 @@
                     .icone_check {
                         margin-right: 0px;
                         height: 100%;
-                        transition: 1s ease-in-out;
+                        transition: 200ms ease-in-out;
                         
                         &::before {
                             color: white;
-                            transition: 1s ease-in-out;
+                            transition: 400ms ease-in-out;
                         transform: rotate(-360deg);
                         }
                     }
