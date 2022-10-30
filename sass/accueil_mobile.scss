@@ -38,7 +38,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 24px;
-    box-shadow: inset 0px 0px 12px 0px #999;
+    box-shadow: inset 0px 4px 4px 0px #999;
 
     form {
         text-align: center;
@@ -294,12 +294,23 @@ footer {
     }
 
     .footer_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         font-family: $font-main;
         color: white;
-        padding: 0px 0px 20px 20px;
+        padding-bottom: 28px;
+        margin-left: 20px;
 
         .footer_icon {
-            margin-right: 12px;
+            display: flex;
+            gap: 12px;
+
+            p {
+                margin: 0;
+                font-family: $font-main;
+                font-weight: 100;
+            }
         }
     }
 }
