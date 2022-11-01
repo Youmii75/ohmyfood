@@ -1,10 +1,6 @@
 @import 'variables';
 
 /*header*/
-body {
-    position: relative;
-}
-
 .name {
     flex-direction: column;
     padding: inherit;
@@ -80,18 +76,20 @@ body {
             
             
             .container_plat:nth-child(1) {
-                animation-delay: 400ms;
-                
+                animation-delay: 200ms;
             }
 
             .container_plat:nth-child(2) {
-                animation-delay: 800ms;
+                animation-delay: 400ms;
 
             }
 
             .container_plat:nth-child(3) {
-                animation-delay: 1200ms;
-                
+                animation-delay: 600ms;
+            }
+
+            .container_plat:nth-child(4) {
+                animation-delay: 800ms;
             }
             
             .container_plat {
@@ -143,11 +141,11 @@ body {
                     .icone_check {
                         margin-right: 0px;
                         height: 100%;
-                        transition: 200ms ease-in-out;
+                        transition: 400ms ease-in-out;
                         
                         &::before {
                             color: white;
-                            transition: 400ms ease-in-out;
+                            transition: 600ms ease-in-out;
                         transform: rotate(-360deg);
                         }
                     }
