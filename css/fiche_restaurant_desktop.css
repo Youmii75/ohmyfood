@@ -7,8 +7,14 @@ body {
   background-color: #F6F6F6;
 }
 
-.menu_liste .info_button {
-  margin: 40px 0 20px 600px;
+.container_menu .menu_liste .info_button {
+  width: 28%;
+  margin: 40px 0 20px 400px;
+}
+
+.name img {
+  height: 400px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=fiche_restaurant_desktop.css.map */

@@ -141,11 +141,11 @@
                     .icone_check {
                         margin-right: 0px;
                         height: 100%;
-                        transition: 200ms ease-in-out;
+                        transition: 400ms ease-in-out;
                         
                         &::before {
                             color: white;
-                            transition: 400ms ease-in-out;
+                            transition: 600ms ease-in-out;
                         transform: rotate(-360deg);
                         }
                     }
