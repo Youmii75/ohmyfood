@@ -185,6 +185,7 @@ body {
     flex-direction: column;
     gap: 24px;
     padding: 20px;
+    margin-bottom: 28px;
 
     h2 {
         margin: 0;
@@ -284,6 +285,8 @@ body {
 /*footer*/
 footer {
     background-color: #353535;
+    font-family: $font-main;
+    color: white;
 
     h3 {
         font-family: $font-title;
@@ -294,23 +297,25 @@ footer {
     }
 
     .footer_text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        font-family: $font-main;
-        color: white;
-        padding-bottom: 28px;
+        padding-bottom: 16px;
         margin-left: 20px;
-
-        .footer_icon {
-            display: flex;
+        
+        dl {
+            display: grid;
+            grid-template-columns: 16px;
+            list-style-type: none;
             gap: 12px;
 
-            p {
-                margin: 0;
-                font-family: $font-main;
-                font-weight: 100;
+            dt {
+              grid-column: 1;
+            }
+
+            dd {
+               grid-column: 2;
+               margin: 0;
             }
         }
+
     }
+    
 }
