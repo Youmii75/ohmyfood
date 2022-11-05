@@ -5,17 +5,19 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 0vh;
+    bottom: 0vh;
+    right: 0vh;
+    left: 0vh;
     z-index: 10;
     background-color: #99E2D0;
     opacity: 1;
     animation: fade-out 4s linear forwards;
-
+    
     .loader {
-      position: relative;
+      position: absolute;
+      transform: translateY(-50%);
+      top: 50vh;
       width: 80px;
       height: 80px;
     }
@@ -28,7 +30,7 @@
     background: black;
     border-radius: 50%;
     animation: lds-default 600ms linear infinite;
-    font-size: 40px;
+    font-size: 80px;
   }
   
   .lds-default .dot:nth-child(1) {
