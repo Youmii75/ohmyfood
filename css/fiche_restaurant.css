@@ -173,12 +173,13 @@
   font-family: "Roboto", sans-serif;
   font-size: 24px;
   color: white;
-  margin: 12px 0 40px 100px;
+  transform: translateX(-50%);
+  margin: 0 0 32px 50%;
   background: linear-gradient(-180deg, #FF79DA, #9356DC);
   transition-duration: 2s;
 }
 .container_menu .menu_liste .info_button:hover {
-  transform: scale(1.2);
+  transform: translateX(-50%) scale(1.2);
 }
 
 /*# sourceMappingURL=fiche_restaurant.css.map */
