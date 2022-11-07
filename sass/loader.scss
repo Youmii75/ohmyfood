@@ -118,7 +118,7 @@
   }
 
   @keyframes fade-out {
-    0% {
+    0%, 20%, 60% {
       opacity: 1;
       visibility: visible;
     }
