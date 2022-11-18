@@ -163,8 +163,8 @@ body {
             justify-content: center;
             transform: translateX(-50%);
             border-radius: 50px;
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             color: white;
             background-color: $color-main;
 
@@ -299,7 +299,7 @@ footer {
     .footer_text {
         padding-bottom: 16px;
         margin-left: 20px;
-        
+
         dl {
             display: grid;
             grid-template-columns: 16px;
@@ -307,15 +307,15 @@ footer {
             gap: 12px;
 
             dt {
-              grid-column: 1;
+                grid-column: 1;
             }
 
             dd {
-               grid-column: 2;
-               margin: 0;
+                grid-column: 2;
+                margin: 0;
             }
         }
 
     }
-    
+
 }

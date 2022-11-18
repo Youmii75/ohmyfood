@@ -41,9 +41,26 @@
   margin: 0 0 0 20px;
   width: 100%;
 }
-.container_menu .title_like .menu_like {
+.container_menu .title_like div {
   font-size: 28px;
   margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+.container_menu .title_like div i:last-child {
+  position: absolute;
+  opacity: 0;
+  transition: 1s ease-in-out all;
+  background: linear-gradient(-190deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container_menu .title_like div i:last-child:hover {
+  opacity: 1;
+  transition: 1s ease-in-out all;
 }
 .container_menu .menu_liste {
   font-family: "Roboto", sans-serif;
