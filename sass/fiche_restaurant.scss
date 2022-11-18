@@ -48,9 +48,28 @@
             width: 100%;
         }
 
-        .menu_like {
+        div{
             font-size: 28px;
             margin-right: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            position: relative;
+
+            i:last-child {
+                position: absolute;
+                opacity: 0;
+                transition: 1s ease-in-out all;
+                background: linear-gradient(-190deg, $color-second-main, $color-main);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            i:last-child:hover {
+                opacity: 1;
+                transition: 1s ease-in-out all;
+            }
         }
 
     }
